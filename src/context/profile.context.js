@@ -49,10 +49,11 @@ export const ProfileProvider = ( { children } ) => {
     
     
     
-    return (<ProfileContext.Provider value={ {isLoading, profile}}>
-        {children}
-    </ProfileContext.Provider>
-    );
-};
+    return (
+        <ProfileContext.Provider value={{ isLoading, profile }}>
+          {children}
+        </ProfileContext.Provider>
+      );
+    };
 
 export const useProfile = () => useContext(ProfileContext); 
