@@ -2,6 +2,7 @@ import React from 'react';
 import { Drawer, Button, Divider, Alert } from 'rsuite';
 import { useProfile } from '../../context/profile.context'; // <---- HERE
 import EditableInput from '../EditableInput';
+import ProviderBlock from './ProviderBlock';
 import { database } from '../../misc/firebase';
 
 const Dashboard = ({ onSignOut}) => {
@@ -27,6 +28,7 @@ const Dashboard = ({ onSignOut}) => {
 
       <Drawer.Body>
         <h3>Hey, {profile.name}</h3>
+        <ProviderBlock />
         <Divider/>
         <EditableInput
             name="nickname"
