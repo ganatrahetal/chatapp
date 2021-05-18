@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import firebase from 'firebase/app';
-import { auth, database, fcmVapidKey, messaging } from '../misc/firebase';
+import { auth, database } from '../misc/firebase';
 
 
 export const isOfflineForDatabase = {
@@ -56,8 +56,8 @@ export const ProfileProvider = ({ children }) => {
             });
         });
 
-        if (messaging) {
-          try {
+        /* if (messaging) {
+        try {
             const currentToken = await messaging.getToken({
               vapidKey: fcmVapidKey,
             });
@@ -71,7 +71,7 @@ export const ProfileProvider = ({ children }) => {
             console.log('An error occurred while retrieving token. ', err);
           
           }
-        }
+        } */
       } else {
         if (userRef) {
           userRef.off();
