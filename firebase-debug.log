@@ -39,3 +39,41 @@
     at async requireDatabaseInstance (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireDatabaseInstance.js:14:20)
     at async Object.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:63:9)
     at async C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[debug] [2021-05-18T13:07:00.718Z] ----------------------------------------------------------------------
+[debug] [2021-05-18T13:07:00.724Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-05-18T13:07:00.724Z] CLI Version:   9.10.2
+[debug] [2021-05-18T13:07:00.724Z] Platform:      win32
+[debug] [2021-05-18T13:07:00.725Z] Node Version:  v14.16.1
+[debug] [2021-05-18T13:07:00.757Z] Time:          Tue May 18 2021 18:37:00 GMT+0530 (India Standard Time)
+[debug] [2021-05-18T13:07:00.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-18T13:07:00.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-18T13:07:00.780Z] > authorizing via signed-in user (hetuganatra2000@gmail.com)
+[debug] [2021-05-18T13:07:00.781Z] [iam] checking project chat-web-app-227d2 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-05-18T13:07:00.785Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-18T13:07:00.786Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-18T13:07:02.508Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 18 May 2021 13:07:02 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-18T13:07:02.530Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-227d2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-05-18T13:07:06.269Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 18 May 2021 13:07:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1393","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-18T13:07:06.272Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project chat-web-app-227d2:
+
+  firebase.projects.get
+  firebasedatabase.instances.update
+  firebasehosting.sites.update
+[debug] [2021-05-18T13:07:06.277Z] > refreshing access token with scopes: []
+[debug] [2021-05-18T13:07:06.277Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-18T13:07:06.749Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 18 May 2021 13:07:06 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-18T13:07:06.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-227d2 [none]
+[debug] [2021-05-18T13:07:08.619Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-227d2 403
+[debug] [2021-05-18T13:07:08.619Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-227d2 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-18T13:07:08.620Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-18T13:07:08.980Z] FirebaseError: Failed to get Firebase project chat-web-app-227d2. Please make sure the project exists and your account has permission to access it.
+    at Object.getFirebaseProject (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:299:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.getDefaultDatabaseInstance (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultDatabaseInstance.js:7:28)
+    at async requireDatabaseInstance (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireDatabaseInstance.js:14:20)
+    at async Object.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:63:9)
+    at async C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
