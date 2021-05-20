@@ -38,6 +38,6 @@ if (messaging) {
 }
 
 if (isLocalhost) {
-  functions.useEmulator('localhost', 3000);
+  functions.useEmulator('localhost', 5001);
 
 }
